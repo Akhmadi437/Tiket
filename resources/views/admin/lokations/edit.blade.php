@@ -1,7 +1,7 @@
 <x-layouts.admin title="Edit Lokasi">
     <div class="container mx-auto p-10">
-        <div class="max-w-md mx-auto">
-            <h1 class="text-2xl font-bold mb-4">Edit Lokasi</h1>
+        <div class="card bg-base-100 shadow p-8 max-w-xl mx-auto mt-12">
+            <h1 class="text-4xl font-semibold mb-6 text-center">Edit Lokasi</h1>
 
             @if($errors->any())
                 <div class="alert alert-error mb-4">
@@ -34,7 +34,7 @@
 
                         <div class="flex gap-2 mt-4">
                             <button type="submit" class="btn btn-primary flex-1">Simpan</button>
-                            <a href="{{ route('admin.lokations.index') }}" class="btn btn-ghost flex-1">Batal</a>
+                            <a href="{{ route('admin.lokations.index') }}" class="flex-1 py-2 text-center text-red-600 border border-red-600 rounded hover:bg-red-50">Batal</a>
                         </div>
                     </form>
                 </div>

@@ -32,11 +32,11 @@
                             <th>{{ $loop->iteration }}</th>
                             <td>{{ $lokasi->nama_lokasi }}</td>
                             <td class="flex gap-2">
-                                <a href="{{ route('admin.lokations.edit', $lokasi->id) }}" class="btn btn-sm">Edit</a>
+                                <a href="{{ route('admin.lokations.edit', $lokasi->id) }}" class="btn btn-sm btn-primary mr-2">Edit</a>
                                 <form action="{{ route('admin.lokations.destroy', $lokasi->id) }}" method="POST" onsubmit="return confirm('Yakin hapus lokasi ini?')">
                                     @csrf
                                     @method('DELETE')
-                                    <button class="btn btn-sm btn-error">Hapus</button>
+                                    <button class="btn btn-sm bg-red-500 text-white">Hapus</button>
                                 </form>
                             </td>
                         </tr>
